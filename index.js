@@ -98,7 +98,7 @@ async function run() {
       }
     });
 
-     app.get("/allJobsApplications", async (req, res) => {
+    app.get("/allJobsApplications", async (req, res) => {
       const result = await allJobsApplications.find().toArray();
       res.send(result);
     });
